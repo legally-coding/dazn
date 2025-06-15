@@ -13,5 +13,6 @@ function startVideo() {
     window.daznKey = "?dazn-token="+awesomestream.split("dazn-token=")[1];
     var player = dashjs.MediaPlayer().create();
     player.initialize(document.querySelector("#videoPlayer"), url, true);
+    player.play();
 }
 
