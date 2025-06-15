@@ -14,5 +14,6 @@ function startVideo() {
     var player = dashjs.MediaPlayer().create();
     player.initialize(document.querySelector("#videoPlayer"), url, true);
     player.play();
+    document.querySelector("video").currentTime += 9999;
 }
 
