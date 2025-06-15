@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2);
+}
+body{
+    background-color:#1e1e1e;
+    overflow: hidden;
+}
+div.link, div.game-list>div{
+    cursor:pointer;
+    font-size:25px;
+    color:#c58af9;
+}
+
+div{
+    color:#5ff4ff;
+    padding:20px;
+    font-size:18px;
+    font-family:Roboto, arial;
+}
+
+div.game-list{
+    position:relative;
+    height:100%;
+    width:100%;
+    display:none;
+}
