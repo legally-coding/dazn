@@ -13,7 +13,7 @@ document.querySelector("#view").onclick = function () {
 
 async function loadEvents() {
     let dates = formatDateToday();
-    let response = await fetch(`https://epg-lite.discovery.indazn.com/ca/v5/epgWithDatesRange?country=us&languageCode=en&openBrowse=true&timeZoneOffset=-420&startDate=${dates[0]}&endDate=${dates[1]}`, { cache: "reload" });
+    let response = await fetch(`https://epg-lite.discovery.indazn.com/ca/v5/epgWithDatesRange?country=us&languageCode=en&openBrowse=true&timeZoneOffset=-420&startDate=${dates[0]}&endDate=${dates[1]}`, { cache: "no-cache" });
     let games = await response.json();
     games = games.Tiles.filter((g) => {
         return g.Competition.Id === "dc4k1xh2984zbypbnunk7ncic" && g.Type === "Live" && g.IsFreemiumLite;
